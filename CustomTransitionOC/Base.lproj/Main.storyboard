@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qB-rz-HKC">
+                                <rect key="frame" x="137" y="225" width="46" height="30"/>
+                                <state key="normal" title="modal"/>
+                                <connections>
+                                    <action selector="modalBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4b2-Fd-Lx5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0qB-rz-HKC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NWX-r0-Zjh"/>
+                            <constraint firstItem="0qB-rz-HKC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z9x-W8-g8j"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="jeV-Vj-clb">
+            <objects>
+                <viewController storyboardIdentifier="ModalViewController" id="6O6-Eb-xVR" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hb-MK-sST"/>
+                        <viewControllerLayoutGuide type="bottom" id="S2g-sa-jEf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85Q-QF-uWx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inc-eH-d3J">
+                                <rect key="frame" x="134" y="225" width="52" height="30"/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <action selector="dismissBtnClicked:" destination="6O6-Eb-xVR" eventType="touchUpInside" id="f8J-LG-shl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="inc-eH-d3J" firstAttribute="centerY" secondItem="85Q-QF-uWx" secondAttribute="centerY" id="Mjg-vX-rBv"/>
+                            <constraint firstItem="inc-eH-d3J" firstAttribute="centerX" secondItem="85Q-QF-uWx" secondAttribute="centerX" id="al6-NP-bzd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUJ-uG-6II" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="224"/>
+        </scene>
+    </scenes>
+</document>
